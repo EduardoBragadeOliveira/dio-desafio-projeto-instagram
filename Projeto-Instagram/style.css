@@ -1,0 +1,211 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+body{
+
+    width: 100%;
+    min-width: 100vw;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-pai{
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+}
+
+.instagram-phone img{
+
+    height: 50rem;
+}
+
+.conteudos{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.login{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.cadastrar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+.login, .cadastrar:nth-child(1){
+
+    min-width: 19rem;
+}
+
+.logo{
+
+    height: 3rem;
+    margin: 60px 60px 30px 60px;
+}
+
+.inputs-de-login{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+    margin: 18px;
+}
+
+#email, #password{
+
+    margin: 7px 0;
+    padding: 9px;
+    border: 1px solid lightgray;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.btn-login{
+
+    display: block;
+    background-color: rgb(63, 132, 189);
+    color: #fff;
+    width: 270px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.btn-facebook{
+
+    margin: 20px;
+    color: #3b5998;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btn-senha{
+
+    color: #3b5998;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btn-cadastrar{
+
+    color: rgb(63, 132, 189);
+    font-weight: 600;
+}
+
+.baixar-app{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   align-items: center;
+    padding: 3rem;
+}
+
+.appdownload{
+
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+
+}
+
+.appdownload:nth-child(1){
+
+    background-image: url(./assets/apple-button.png);
+}
+
+.appdownload:nth-child(2){
+
+    background-image: url(./assets/googleplay-button.png);
+}
+
+@media (max-width: 1024px){
+
+    .container-pai{
+
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+
+    .container-pai{
+
+        width: 90%;
+    }
+
+    .instagram-phone{
+
+        display: none;
+    }
+
+    .conteudos{
+
+        width: 100%;
+    }
+}
